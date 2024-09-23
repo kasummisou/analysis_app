@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 1122.5197 793.70081"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <rect
+       x="145.98081"
+       y="176.39348"
+       width="723.82152"
+       height="384.72026"
+       id="rect22" />
+    <rect
+       x="194.61988"
+       y="188.89576"
+       width="467.94633"
+       height="253.29205"
+       id="rect6" />
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       id="filter31"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         result="result2"
+         type="luminanceToAlpha"
+         in="SourceGraphic"
+         id="feColorMatrix28" />
+      <feSpecularLighting
+         specularConstant="0.5"
+         surfaceScale="-15"
+         specularExponent="10"
+         result="result10"
+         id="feSpecularLighting28">
+        <feDistantLight
+           elevation="20"
+           azimuth="225"
+           id="feDistantLight28" />
+      </feSpecularLighting>
+      <feDiffuseLighting
+         diffuseConstant="0.5"
+         surfaceScale="15"
+         id="feDiffuseLighting29">
+        <feDistantLight
+           azimuth="225"
+           elevation="20"
+           id="feDistantLight29" />
+      </feDiffuseLighting>
+      <feComposite
+         result="result11"
+         in2="result10"
+         operator="arithmetic"
+         k2="0.5"
+         k3="0.5"
+         id="feComposite29" />
+      <feComposite
+         in="result11"
+         result="result9"
+         operator="arithmetic"
+         k2="1"
+         k3="1"
+         in2="SourceGraphic"
+         id="feComposite30" />
+      <feComposite
+         in2="SourceGraphic"
+         operator="in"
+         in="result9"
+         id="feComposite31" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       id="filter34"
+       x="-0.016933184"
+       y="-0.016763178"
+       width="1.0338664"
+       height="1.0335264">
+      <feColorMatrix
+         result="result2"
+         type="luminanceToAlpha"
+         in="SourceGraphic"
+         id="feColorMatrix31" />
+      <feSpecularLighting
+         specularConstant="0.5"
+         surfaceScale="-15"
+         specularExponent="10"
+         result="result10"
+         id="feSpecularLighting31">
+        <feDistantLight
+           elevation="20"
+           azimuth="225"
+           id="feDistantLight31" />
+      </feSpecularLighting>
+      <feDiffuseLighting
+         diffuseConstant="0.5"
+         surfaceScale="15"
+         id="feDiffuseLighting32">
+        <feDistantLight
+           azimuth="225"
+           elevation="20"
+           id="feDistantLight32" />
+      </feDiffuseLighting>
+      <feComposite
+         result="result11"
+         in2="result10"
+         operator="arithmetic"
+         k2="0.5"
+         k3="0.5"
+         id="feComposite32" />
+      <feComposite
+         in="result11"
+         result="result9"
+         operator="arithmetic"
+         k2="1"
+         k3="1"
+         in2="SourceGraphic"
+         id="feComposite33" />
+      <feComposite
+         in2="SourceGraphic"
+         operator="in"
+         in="result9"
+         id="feComposite34" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       id="filter37"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         result="result2"
+         type="luminanceToAlpha"
+         in="SourceGraphic"
+         id="feColorMatrix34" />
+      <feSpecularLighting
+         specularConstant="0.5"
+         surfaceScale="-15"
+         specularExponent="10"
+         result="result10"
+         id="feSpecularLighting34">
+        <feDistantLight
+           elevation="20"
+           azimuth="225"
+           id="feDistantLight34" />
+      </feSpecularLighting>
+      <feDiffuseLighting
+         diffuseConstant="0.5"
+         surfaceScale="15"
+         id="feDiffuseLighting35">
+        <feDistantLight
+           azimuth="225"
+           elevation="20"
+           id="feDistantLight35" />
+      </feDiffuseLighting>
+      <feComposite
+         result="result11"
+         in2="result10"
+         operator="arithmetic"
+         k2="0.5"
+         k3="0.5"
+         id="feComposite35" />
+      <feComposite
+         in="result11"
+         result="result9"
+         operator="arithmetic"
+         k2="1"
+         k3="1"
+         in2="SourceGraphic"
+         id="feComposite36" />
+      <feComposite
+         in2="SourceGraphic"
+         operator="in"
+         in="result9"
+         id="feComposite37" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter34-1"
+       x="-0.016932351"
+       y="-0.016762353"
+       width="1.0338647"
+       height="1.0335247">
+      <feColorMatrix
+         result="result2"
+         type="luminanceToAlpha"
+         in="SourceGraphic"
+         id="feColorMatrix31-0" />
+      <feSpecularLighting
+         specularConstant="0.5"
+         surfaceScale="-15"
+         specularExponent="10"
+         result="result10"
+         id="feSpecularLighting31-3">
+        <feDistantLight
+           elevation="20"
+           azimuth="225"
+           id="feDistantLight31-1" />
+      </feSpecularLighting>
+      <feDiffuseLighting
+         diffuseConstant="0.5"
+         surfaceScale="15"
+         id="feDiffuseLighting32-1">
+        <feDistantLight
+           azimuth="225"
+           elevation="20"
+           id="feDistantLight32-5" />
+      </feDiffuseLighting>
+      <feComposite
+         result="result11"
+         in2="result10"
+         operator="arithmetic"
+         k2="0.5"
+         k3="0.5"
+         id="feComposite32-0"
+         k1="0"
+         k4="0" />
+      <feComposite
+         in="result11"
+         result="result9"
+         operator="arithmetic"
+         k2="1"
+         k3="1"
+         in2="SourceGraphic"
+         id="feComposite33-8"
+         k1="0"
+         k4="0" />
+      <feComposite
+         in2="SourceGraphic"
+         operator="in"
+         in="result9"
+         id="feComposite34-4" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter34-1-8"
+       x="-0.016932351"
+       y="-0.016762353"
+       width="1.0338647"
+       height="1.0335247">
+      <feColorMatrix
+         result="result2"
+         type="luminanceToAlpha"
+         in="SourceGraphic"
+         id="feColorMatrix31-0-7" />
+      <feSpecularLighting
+         specularConstant="0.5"
+         surfaceScale="-15"
+         specularExponent="10"
+         result="result10"
+         id="feSpecularLighting31-3-8">
+        <feDistantLight
+           elevation="20"
+           azimuth="225"
+           id="feDistantLight31-1-0" />
+      </feSpecularLighting>
+      <feDiffuseLighting
+         diffuseConstant="0.5"
+         surfaceScale="15"
+         id="feDiffuseLighting32-1-4">
+        <feDistantLight
+           azimuth="225"
+           elevation="20"
+           id="feDistantLight32-5-5" />
+      </feDiffuseLighting>
+      <feComposite
+         result="result11"
+         in2="result10"
+         operator="arithmetic"
+         k2="0.5"
+         k3="0.5"
+         id="feComposite32-0-7"
+         k1="0"
+         k4="0" />
+      <feComposite
+         in="result11"
+         result="result9"
+         operator="arithmetic"
+         k2="1"
+         k3="1"
+         in2="SourceGraphic"
+         id="feComposite33-8-1"
+         k1="0"
+         k4="0" />
+      <feComposite
+         in2="SourceGraphic"
+         operator="in"
+         in="result9"
+         id="feComposite34-4-0" />
+    </filter>
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       style="opacity:0.99637;fill:#f03505;fill-opacity:0.97947198;fill-rule:evenodd;stroke-width:0.521575;stroke-linecap:round"
+       id="rect21"
+       width="1125.2688"
+       height="796.81195"
+       x="-1.5206335"
+       y="0" />
+    <text
+       xml:space="preserve"
+       id="text21"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;font-family:'.Diwan Kufi PUA';-inkscape-font-specification:'.Diwan Kufi PUA, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect22);display:inline;opacity:0.99637;fill:#e2dfe0;fill-opacity:0.979472;fill-rule:evenodd;stroke-width:0.521575;stroke-linecap:round" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;line-height:0.7;font-family:'.Diwan Kufi PUA';-inkscape-font-specification:'.Diwan Kufi PUA, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:0.99637;fill:#fcfbfb;fill-opacity:0.979472;fill-rule:evenodd;stroke-width:0.521575;stroke-linecap:round;filter:url(#filter37)"
+       x="69.753899"
+       y="371.33707"
+       id="text23"><tspan
+         id="tspan23"
+         x="69.753899"
+         y="371.33707"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:146.667px;line-height:0.7;font-family:AppleMyungjo;-inkscape-font-specification:'AppleMyungjo, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;direction:ltr">S<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:120px;font-family:AppleMyungjo;-inkscape-font-specification:'AppleMyungjo, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan25">tatistics</tspan></tspan></text>
+    <ellipse
+       style="fill:#ff8904;fill-opacity:0.98;fill-rule:evenodd;stroke:#fff7f7;stroke-width:5.05298;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:0.986456;filter:url(#filter34-1)"
+       id="path28-3"
+       cx="282.49539"
+       cy="392.6637"
+       rx="74.605408"
+       ry="75.36203"
+       transform="matrix(0.77978682,0,0,0.78199773,34.612325,81.355898)" />
+  </g>
+  <g
+     id="layer2">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;line-height:0.6;font-family:'.Diwan Kufi PUA';-inkscape-font-specification:'.Diwan Kufi PUA, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:0.99637;fill:#fcfbfb;fill-opacity:0.979472;fill-rule:evenodd;stroke-width:0.521575;stroke-linecap:round;filter:url(#filter31)"
+       x="52.997116"
+       y="496.4733"
+       id="text23-4"><tspan
+         id="tspan23-3"
+         x="52.997116"
+         y="496.4733"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:146.667px;line-height:0.6;font-family:AppleMyungjo;-inkscape-font-specification:'AppleMyungjo, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;direction:ltr;baseline-shift:baseline">   A<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:120px;font-family:AppleMyungjo;-inkscape-font-specification:'AppleMyungjo, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan24">nalysis</tspan> Apps</tspan></text>
+    <tspan
+       id="tspan22"
+       style="opacity:0.99637024;stroke-width:0.5215748;stroke-linecap:round;fill-rule:evenodd;fill:#e2dfe0;font-size:192px;-inkscape-font-specification:'.Diwan Kufi PUA, Normal';font-family:'.Diwan Kufi PUA';font-weight:normal;fill-opacity:0.97947198;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect22)" />
+  </g>
+  <g
+     id="layer3" />
+</svg>
