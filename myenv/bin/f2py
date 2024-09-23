@@ -1,4 +1,4 @@
-#!/Users/dainoboru/Desktop/analysis_app/myenv/bin/python3
+#!/Users/dainoboru/Desktop/analysis_app/myenv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
