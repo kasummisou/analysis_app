@@ -51,7 +51,7 @@ miniKanren==1.0.3
 multipledispatch==1.0.0
 narwhals==1.8.1
 netCDF4==1.7.1.post2
-numpy==1.23.5  # バージョンをダウングレード
+numpy>=1.26.0,<2.0
 optuna==4.0.0
 optuna-integration==4.0.0
 packaging==24.1
@@ -98,3 +98,4 @@ wrapt==1.16.0
 xarray==2023.12.0
 xarray-einstats==0.6.0
 zipp==3.20.2
+setuptools>=67.0.0  # 追加
