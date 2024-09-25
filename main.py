@@ -68,7 +68,7 @@ st.markdown(
 st.title('Bayesian, Multivariate Analysis, Machine (Deep)-Learning and EDA')
 
 # SVG画像の表示（パスは適宜変更してください）
-svg_file = '/Users/dainoboru/Desktop/analysis_app/statisticsanalysisapps1.svg'
+svg_file = 'statisticsanalysisapps1.svg'
 st.image(svg_file, width=700)
 
 # デモ用のデータセット
