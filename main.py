@@ -64,9 +64,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# タイトル
-st.title('Bayesian, Multivariate Analysis, Machine (Deep)-Learning and EDA')
-
 # SVG画像の表示（パスは適宜変更してください）
 svg_file = 'statisticsanalysisapps1.svg'
 st.image(svg_file, width=700)
