@@ -65,7 +65,7 @@ st.markdown(
 )
 
 # SVG画像の表示（パスは適宜変更してください）
-svg_file = 'statisticsanalysisapps1.svg'
+svg_file = 'statisticsanalysisapps.svg'
 st.image(svg_file, width=700)
 
 # デモ用のデータセット
