@@ -1,39 +1,29 @@
-# ベースイメージとしてPython 3.9の軽量バージョンを使用
-FROM python:3.9-slim-buster
+# ベースイメージとしてPythonを使用
+FROM python:3.9-slim
 
-# システム依存パッケージをインストール
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    build-essential \
-    python3-dev \
+# 必要なビルドツールと依存関係をインストール
+RUN apt-get update && apt-get install -y \
     gcc \
     g++ \
-    libssl-dev \
-    libcurl4-openssl-dev \
-    libxml2-dev \
-    libxmlsec1-dev \
-    libffi-dev \
-    && rm -rf /var/lib/apt/lists/*
+    make \
+    pkg-config \
+    libhdf5-dev \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# 作業ディレクトリを設定
+# 作業ディレクトリを作成
 WORKDIR /app
 
-# requirements.txtをコピー
-COPY requirements.txt /app/
+# 必要な依存関係をインストールするためにrequirements.txtをコピー
+COPY requirements.txt .
 
-# Pythonパッケージをインストール
-RUN pip install --no-cache-dir -r requirements.txt
+# 必要なPythonパッケージをインストール
+RUN pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir -r requirements.txt
 
-# アプリケーションのソースコードと必要なファイルをコピー
-COPY . /app
+# アプリケーションファイル全体をコンテナ内にコピー
+COPY . .
 
-# ポートを公開（Cloud Runはデフォルトで8080ポートを使用）
-EXPOSE 8080
+# ポートを明示（任意）
+EXPOSE 8501
 
-# 環境変数の設定
-ENV PORT 8080
-ENV STREAMLIT_SERVER_PORT $PORT
-ENV STREAMLIT_SERVER_ADDRESS 0.0.0.0
-ENV STREAMLIT_SERVER_ENABLE_CORS false
-
-# アプリケーションの起動コマンド
-CMD ["streamlit", "run", "main.py", "--server.port=8080", "--server.address=0.0.0.0"]
+# Streamlitアプリを起動
+CMD ["streamlit", "run", "main.py", "--server.port=$PORT", "--server.address=0.0.0.0", "--server.headless=true"]
