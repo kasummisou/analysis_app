@@ -1,1 +1,1 @@
-echo 'web: streamlit run home.py --server.port ${PORT:-8080}' > Procfile
+web: streamlit run main.py --server.port ${PORT:-8080} --server.address 0.0.0.0
