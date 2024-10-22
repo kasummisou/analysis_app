@@ -1,1 +1,1 @@
-web: streamlit run home.py --server.port ${PORT:-8080}
+web: streamlit run main.py --server.port ${PORT:-8080}
