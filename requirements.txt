@@ -101,4 +101,3 @@ xarray-einstats==0.6.0
 zipp==3.20.2
 setuptools>=67.0.0  # 追加
 streamlit==1.38.0
-gunicorn==21.2.0
