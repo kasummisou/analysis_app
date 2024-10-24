@@ -22,8 +22,8 @@ RUN pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir -r re
 # アプリケーションファイル全体をコンテナ内にコピー
 COPY . .
 
-# ポートを明示（任意）
-EXPOSE 8501
+# ポートを明示（Cloud Runは8080を期待）
+EXPOSE 8080
 
-# Streamlitアプリを起動
-CMD ["streamlit", "run", "main.py", "--server.port=$PORT", "--server.address=0.0.0.0", "--server.headless=true"]
+# Streamlitアプリを起動（シェル形式で$PORTを展開）
+CMD ["sh", "-c", "streamlit run main.py --server.port=${PORT:-8080} --server.address=0.0.0.0 --server.headless=true"]
