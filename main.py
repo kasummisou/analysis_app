@@ -10,7 +10,6 @@ from modules.Feature_Engineering.show_dataframe_info import show_dataframe_info
 from modules.Feature_Engineering.start_feature_engineering import start_feature_engineering
 
 from modules.Binary_Classification.run_lightgbm import run_lightgbm
-from modules.Binary_Classification.run_catboost import run_catboost
 
 from modules.Regression.run_linear_regression import run_linear_regression
 
@@ -21,7 +20,7 @@ from modules.Effectiveness_Verification.run_t_statistic_ab_test import run_t_sta
 from modules.Time_Series_Forecasting.initial_setting_quick_eda import initial_setting_quick_eda
 from modules.Time_Series_Forecasting.run_stl_adf_autocorrelation import run_stl_adf_autocorrelation
 from modules.Time_Series_Forecasting.run_sarimax import run_sarimax
-from modules.Time_Series_Forecasting.run_prophet import run_prophet
+from modules.Time_Series_Forecasting.visualization_of_time_series_feature import visualization_of_time_series_feature
 
 # カスタムCSSを追加
 st.markdown(
@@ -144,9 +143,6 @@ st.sidebar.subheader("3. Binary Classification")
 if st.sidebar.checkbox("Run LightGBM"):
     run_lightgbm(df)
 
-if st.sidebar.checkbox("Run CatBoost"):
-    run_catboost(df)
-
 # Regression
 st.sidebar.subheader("4. Regression")
 
@@ -177,5 +173,5 @@ if st.sidebar.checkbox("STL/ADF/Autocorrelation"):
 if st.sidebar.checkbox("Run SARIMAX"):
     run_sarimax(df)
 
-if st.sidebar.checkbox("Run Prophet"):
-    run_prophet(df)
+if st.sidebar.checkbox("Visualization TimeSeriesFeature"):
+    visualization_of_time_series_feature(df)
