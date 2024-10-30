@@ -62,17 +62,29 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# SVG画像の表示（パスは適宜変更してください）
-svg_file = 'statisticsanalysisapps.svg'
+# SVGファイルのパスを設定（適宜ファイル名は変更してください）
+svg_files = {
+    "Image 1": "analysisapp1.svg",
+    "Image 2": "analysisapp2.svg"
+}
+
+# デフォルトを「Image 1」に設定
+selected_image = st.sidebar.selectbox("Select SVG Image", options=list(svg_files.keys()), index=0)
+
+# 選択されたSVGファイルのパスを取得
+svg_file = svg_files[selected_image]
+
+# SVG画像を表示
 st.image(svg_file, width=700)
 
 # デモ用のデータセット
 demo_datasets = {
     "Iris": "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv",
-    "Titanic": "https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv",
-    "EffectivenessData" : "lenta_dataset.csv",
-    "COVID-19" : "https://raw.githubusercontent.com/datasets/covid-19/main/data/countries-aggregated.csv",
-    "sales_data_with_attributes" : "sales_data_with_attributes.csv"
+    "3:Titanic": "https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv",
+    "4:Advertising": "https://raw.githubusercontent.com/justmarkham/scikit-learn-videos/1a20cab8fedf814e83b4b75cae81a28a79cd3753/data/Advertising.csv",
+    "5:EffectivenessData" : "lenta_dataset.csv",
+    "6:COVID-19" : "https://raw.githubusercontent.com/datasets/covid-19/main/data/countries-aggregated.csv",
+    "6:sales_data_with_attributes" : "sales_data_with_attributes.csv"
 }
 
 # サイドバーにファイルアップロードウィジェットを配置

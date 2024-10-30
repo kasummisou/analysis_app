@@ -1,5 +1,3 @@
-# modules/Regression/run_linear_regression.py
-
 import numpy as np
 import streamlit as st
 import pandas as pd
@@ -7,8 +5,10 @@ from sklearn.model_selection import train_test_split, KFold, cross_val_score
 from sklearn.linear_model import LinearRegression, LassoCV, RidgeCV, ElasticNetCV
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import statsmodels.api as sm
+from statsmodels.stats.outliers_influence import variance_inflation_factor
 import matplotlib.pyplot as plt
 import seaborn as sns
+from sklearn.preprocessing import StandardScaler
 
 def run_linear_regression(df):
     st.subheader("Regression Model Builder")
@@ -45,21 +45,39 @@ def run_linear_regression(df):
     st.write(f"Number of rows after dropping rows with missing values: {data.shape[0]} rows")
 
     # Feature Scaling
-    from sklearn.preprocessing import StandardScaler
     scaler = StandardScaler()
     X_scaled = scaler.fit_transform(X)
     X_scaled = pd.DataFrame(X_scaled, columns=feature_columns, index=X.index)
 
-    # 5. K-Fold Cross-Validation
+    # 追加: 5. 多重共線性の確認 (VIF)
+    st.subheader("Multicollinearity Check (VIF)")
+
+    # VIFの計算
+    vif_data = pd.DataFrame()
+    vif_data["Feature"] = feature_columns
+    vif_data["VIF"] = [variance_inflation_factor(X_scaled.values, i) for i in range(X_scaled.shape[1])]
+    
+    st.write("### Variance Inflation Factor (VIF)")
+    st.write(vif_data)
+
+    # VIFが高い特徴量を強調表示（例: VIF > 5）
+    high_vif = vif_data[vif_data["VIF"] > 5]
+    if not high_vif.empty:
+        st.write("**Features with VIF > 5 (Possible Multicollinearity):**")
+        st.write(high_vif)
+    else:
+        st.write("No features with VIF > 5 detected.")
+
+    # 6. K-Fold Cross-Validation (番号を調整)
     st.subheader("K-Fold Cross-Validation")
     n_splits = st.slider("Select Number of Folds", min_value=2, max_value=10, value=5, key="lr_n_splits")
 
-    # 6. Model Selection
+    # 7. Model Selection (番号を調整)
     st.subheader("Select Regression Model")
     model_options = ["Linear Regression", "Lasso Regression (with CV)", "Ridge Regression (with CV)", "ElasticNet Regression (with CV)"]
     selected_model = st.selectbox("Choose a model", model_options, key="lr_model_selection")
 
-    # 7. Model Training and Evaluation
+    # 8. Model Training and Evaluation (番号を調整)
     st.subheader("Model Training and Evaluation")
     if st.button("Run Model", key="lr_run_model_button"):
         # Split data
@@ -84,9 +102,6 @@ def run_linear_regression(df):
 
         # Predictions on test data
         y_pred = model.predict(X_test)
-
-
-
 
         residuals = y_test - y_pred
 
@@ -236,7 +251,8 @@ def run_linear_regression(df):
             scoring='neg_mean_squared_error'
         )
         cv_rmse = np.sqrt(-cv_scores)
-        st.write(f"**{n_splits}-Fold Cross-Validation RMSE:** {cv_rmse}")
+        st.write(f"**{n_splits}-Fold Cross-Validation RMSE:**")
+        st.write(cv_rmse)
         st.write(f"**Average CV RMSE:** {cv_rmse.mean():.4f}")
 
         # 15. Feature Importance (For Models that Support It)
