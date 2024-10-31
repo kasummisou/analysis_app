@@ -8,6 +8,10 @@ RUN apt-get update && apt-get install -y \
     make \
     pkg-config \
     libhdf5-dev \
+    libgl1-mesa-glx \
+    libsm6 \
+    libxext6 \
+    libxrender1 \
     && apt-get clean
 
 # 作業ディレクトリを作成
@@ -23,4 +27,4 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 COPY . .
 
 # Streamlitアプリを起動
-CMD ["streamlit", "run", "main.py", "--server.port=8080", "--server.headless=true"]
+CMD ["streamlit", "run", "main.py", "--server.port=8080", "--server.headless=true", "--server.enableCORS=false"]
