@@ -26,5 +26,5 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 # アプリケーションファイル全体をコンテナ内にコピー
 COPY . .
 
-# Streamlitアプリを起動
-CMD ["streamlit", "run", "main.py", "--server.port=8080", "--server.headless=true", "--server.enableCORS=false"]
+# Uvicornを用いてFastAPIとStreamlitを同時に起動
+CMD ["sh", "-c", "uvicorn api:app --host 0.0.0.0 --port 8080 & streamlit run main.py --server.port=8501 --server.headless=true --server.enableCORS=false"]
